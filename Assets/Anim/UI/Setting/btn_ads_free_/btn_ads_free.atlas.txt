@@ -1,0 +1,20 @@
+
+btn_ads_free.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+btn_ads_free
+  rotate: false
+  xy: 2, 47
+  size: 556, 152
+  orig: 556, 152
+  offset: 0, 0
+  index: -1
+line
+  rotate: true
+  xy: 2, 2
+  size: 43, 291
+  orig: 43, 291
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,20 @@
+
+item_switch.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+flare
+  rotate: false
+  xy: 2, 2
+  size: 405, 398
+  orig: 405, 398
+  offset: 0, 0
+  index: -1
+item_switch
+  rotate: false
+  xy: 409, 288
+  size: 112, 112
+  orig: 112, 112
+  offset: 0, 0
+  index: -1

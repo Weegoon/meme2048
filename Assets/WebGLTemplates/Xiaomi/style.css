@@ -1,0 +1,71 @@
+.adsense-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 90px;
+  text-align: center;
+  z-index: 1000;
+}
+
+.adsense-bottom ins {
+  width: 100%;
+  height: 90px;
+}
+
+#loading-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'Monaco', monospace;
+  z-index: 10;
+  /* Đảm bảo loading screen ở trên canvas */
+}
+
+#loading-text {
+  font-size: 18px;
+  margin-top: 10px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.progressbar {
+  width: 250px;
+  height: 16px;
+  box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.25),
+    0px 1px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  position: relative;
+  background: rgba(255, 255, 255, 0.32);
+  padding: 0;
+  /* Đảm bảo không có padding gây lệch */
+}
+
+.progressbarnew {
+  background-color: #FFA500;
+  width: 5%;
+  height: 16px;
+  box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.25),
+    0px 1px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  /* Căn trên cùng */
+  left: 0;
+  /* Căn trái */
+  overflow: hidden;
+}
+
+.progressBarImg {
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,48 @@
+
+logo.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+logo/block
+  rotate: false
+  xy: 2, 2
+  size: 563, 146
+  orig: 563, 146
+  offset: 0, 0
+  index: -1
+logo/e
+  rotate: true
+  xy: 782, 20
+  size: 48, 74
+  orig: 48, 74
+  offset: 0, 0
+  index: -1
+logo/g
+  rotate: true
+  xy: 706, 7
+  size: 61, 74
+  orig: 61, 74
+  offset: 0, 0
+  index: -1
+logo/m
+  rotate: true
+  xy: 706, 70
+  size: 78, 73
+  orig: 78, 73
+  offset: 0, 0
+  index: -1
+logo/r
+  rotate: false
+  xy: 781, 70
+  size: 60, 74
+  orig: 60, 74
+  offset: 0, 0
+  index: -1
+logo/square
+  rotate: false
+  xy: 567, 10
+  size: 137, 138
+  orig: 137, 138
+  offset: 0, 0
+  index: -1

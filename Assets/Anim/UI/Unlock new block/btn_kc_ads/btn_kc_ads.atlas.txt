@@ -1,0 +1,20 @@
+
+btn_kc_ads.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+btn_kc_ads
+  rotate: false
+  xy: 2, 47
+  size: 542, 136
+  orig: 542, 136
+  offset: 0, 0
+  index: -1
+line
+  rotate: true
+  xy: 2, 2
+  size: 43, 291
+  orig: 43, 291
+  offset: 0, 0
+  index: -1

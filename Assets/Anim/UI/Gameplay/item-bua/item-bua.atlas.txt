@@ -1,0 +1,55 @@
+
+item-bua.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+flare
+  rotate: false
+  xy: 2, 29
+  size: 405, 398
+  orig: 405, 398
+  offset: 0, 0
+  index: -1
+imp-1/1
+  rotate: true
+  xy: 409, 2
+  size: 127, 164
+  orig: 127, 164
+  offset: 0, 0
+  index: -1
+imp-1/2
+  rotate: true
+  xy: 575, 2
+  size: 127, 164
+  orig: 127, 164
+  offset: 0, 0
+  index: -1
+imp-1/3
+  rotate: false
+  xy: 695, 131
+  size: 127, 164
+  orig: 127, 164
+  offset: 0, 0
+  index: -1
+imp-1/4
+  rotate: true
+  xy: 695, 297
+  size: 127, 164
+  orig: 127, 164
+  offset: 0, 0
+  index: -1
+imp-1/5
+  rotate: true
+  xy: 741, 2
+  size: 127, 164
+  orig: 127, 164
+  offset: 0, 0
+  index: -1
+item_bua_2
+  rotate: false
+  xy: 409, 131
+  size: 284, 296
+  orig: 284, 296
+  offset: 0, 0
+  index: -1

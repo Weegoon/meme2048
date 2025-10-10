@@ -1,0 +1,13 @@
+
+hand-hint.png
+size: 128,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ic_hand
+  rotate: false
+  xy: 2, 2
+  size: 121, 173
+  orig: 121, 173
+  offset: 0, 0
+  index: -1

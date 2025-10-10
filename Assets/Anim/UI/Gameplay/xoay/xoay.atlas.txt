@@ -1,0 +1,13 @@
+
+xoay.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+xoay
+  rotate: false
+  xy: 2, 2
+  size: 325, 325
+  orig: 325, 325
+  offset: 0, 0
+  index: -1

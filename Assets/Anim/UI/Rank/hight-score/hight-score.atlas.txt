@@ -1,0 +1,41 @@
+
+hight-score.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bg_crown
+  rotate: false
+  xy: 2, 132
+  size: 460, 292
+  orig: 460, 292
+  offset: 0, 0
+  index: -1
+crown
+  rotate: true
+  xy: 789, 20
+  size: 164, 104
+  orig: 164, 104
+  offset: 0, 0
+  index: -1
+flare
+  rotate: false
+  xy: 464, 132
+  size: 273, 288
+  orig: 273, 288
+  offset: 0, 0
+  index: -1
+high_score_ruybang
+  rotate: false
+  xy: 2, 2
+  size: 636, 128
+  orig: 636, 128
+  offset: 0, 0
+  index: -1
+txt_high_scores
+  rotate: true
+  xy: 739, 20
+  size: 404, 48
+  orig: 404, 48
+  offset: 0, 0
+  index: -1

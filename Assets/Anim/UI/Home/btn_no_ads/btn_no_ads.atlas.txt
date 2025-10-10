@@ -1,0 +1,27 @@
+
+btn_no_ads.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+btn_noads_1
+  rotate: false
+  xy: 2, 94
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+btn_noads_2
+  rotate: true
+  xy: 84, 4
+  size: 88, 36
+  orig: 88, 36
+  offset: 0, 0
+  index: -1
+btn_noads_3
+  rotate: true
+  xy: 2, 2
+  size: 90, 80
+  orig: 90, 80
+  offset: 0, 0
+  index: -1
