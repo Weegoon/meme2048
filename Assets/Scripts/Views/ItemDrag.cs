@@ -10,7 +10,7 @@ public class ItemDrag : MonoBehaviour
     [SerializeField]
     TMP_Text txtAmount;
     [SerializeField]
-    Image image, imageDiamond;
+    Image /*image,*/ imageDiamond;
     [SerializeField]
     Image[] AmountImages;
     [SerializeField]
@@ -59,7 +59,7 @@ public class ItemDrag : MonoBehaviour
         }
         else
         {
-            this.image.sprite = Map.Instance.GetSprite(amount);
+            //this.image.sprite = Map.Instance.GetSprite(amount);
             this.gameObject.SetActive(true);
         }
     }

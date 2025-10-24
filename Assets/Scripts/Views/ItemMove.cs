@@ -11,7 +11,7 @@ public class ItemMove : MonoBehaviour
     [SerializeField]
     TMP_Text txtAmount;
     [SerializeField]
-    Image image, trail;
+    Image /*image,*/ trail;
     [SerializeField]
     Image[] AmountImages;
     [SerializeField]
@@ -50,7 +50,7 @@ public class ItemMove : MonoBehaviour
         }
         else
         {
-            this.image.sprite = Map.Instance.GetSprite(amount);
+            //this.image.sprite = Map.Instance.GetSprite(amount);
             this.trail.color = Map.Instance.GetColor(amount);
             this.gameObject.SetActive(true);
         }

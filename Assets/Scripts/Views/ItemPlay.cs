@@ -11,7 +11,7 @@ public class ItemPlay : MonoBehaviour, IPointerClickHandler
     [SerializeField]
     TMP_Text txtAmount;
     [SerializeField]
-    Image image, imageDiamond, imageTick, imageKing;
+    Image /*image, */imageDiamond, imageTick, imageKing;
     [HideInInspector]
     public string Key;
     [HideInInspector]
@@ -85,6 +85,8 @@ public class ItemPlay : MonoBehaviour, IPointerClickHandler
         IsDiamond = value;
         imageDiamond.gameObject.SetActive(value);
     }
+
+    public GameObject ObjItem;
     private void ChangeAmount(long amount)
     {
         var MaxBlock = LocalStore.GetMaxBlock();
@@ -97,7 +99,12 @@ public class ItemPlay : MonoBehaviour, IPointerClickHandler
         }
         else
         {
-            this.image.sprite = Map.Instance.GetSprite(amount);
+            if (ObjItem != null)
+            {
+                Map.Instance.objectPoolManager.DespawnGameObject(ObjItem);
+                ObjItem = null;
+            }
+            ObjItem = Map.Instance.SetMemePrefab(amount, transform);
             this.gameObject.SetActive(true);
         }
         if (amount>= MaxBlock)

@@ -7,10 +7,14 @@ using TMPro;
 using Spine;
 using Spine.Unity;
 using DG.Tweening;
+using ObjectPooling;
 
 public class Map : MonoBehaviour
 {
     public static Map Instance;
+
+    public ObjectPoolManager objectPoolManager;
+
     [SerializeField]
     List<ItemPlay> listItems;
     [SerializeField]
@@ -39,8 +43,11 @@ public class Map : MonoBehaviour
     [HideInInspector]
     public bool IsPlaying;
     // //
+    //[SerializeField]
+    //Sprite[] sprites;
     [SerializeField]
-    Sprite[] sprites;
+    GameObject[] sprites;
+
     [SerializeField]
     Sprite[] amountSprites;
     [SerializeField]
@@ -1432,46 +1439,94 @@ public class Map : MonoBehaviour
     {
         popupTest.Show(OnchangeRate, listrt);
     }
-    public Sprite GetSprite(long amount)
+    //public Sprite GetSprite(long amount)
+    //{
+    //    long min = listAmount[0];
+    //    if (amount == min)
+    //        return sprites[countBlockChange % 17];
+    //    if (amount == min * Math.Pow(2, 1))
+    //        return sprites[(countBlockChange + 1) % 17];
+    //    if (amount == min * Math.Pow(2, 2))
+    //        return sprites[(countBlockChange + 2) % 17];
+    //    if (amount == min * Math.Pow(2, 3))
+    //        return sprites[(countBlockChange + 3) % 17];
+    //    if (amount == min * Math.Pow(2, 4))
+    //        return sprites[(countBlockChange + 4) % 17];
+    //    if (amount == min * Math.Pow(2, 5))
+    //        return sprites[(countBlockChange + 5) % 17];
+    //    if (amount == min * Math.Pow(2, 6))
+    //        return sprites[(countBlockChange + 6) % 17];
+    //    if (amount == min * Math.Pow(2, 7))
+    //        return sprites[(countBlockChange + 7) % 17];
+    //    if (amount == min * Math.Pow(2, 8))
+    //        return sprites[(countBlockChange + 8) % 17];
+    //    if (amount == min * Math.Pow(2, 9))
+    //        return sprites[(countBlockChange + 9) % 17];
+    //    if (amount == min * Math.Pow(2, 10))
+    //        return sprites[(countBlockChange + 10) % 17];
+    //    if (amount == min * Math.Pow(2, 11))
+    //        return sprites[(countBlockChange + 11) % 17];
+    //    if (amount == min * Math.Pow(2, 12))
+    //        return sprites[(countBlockChange + 12) % 17];
+    //    if (amount == min * Math.Pow(2, 13))
+    //        return sprites[(countBlockChange + 13) % 17];
+    //    if (amount == min * Math.Pow(2, 14))
+    //        return sprites[(countBlockChange + 14) % 17];
+    //    if (amount == min * Math.Pow(2, 15))
+    //        return sprites[(countBlockChange + 15) % 17];
+    //    if (amount == min * Math.Pow(2, 16))
+    //        return sprites[(countBlockChange + 16) % 17];
+
+    //    return sprites[(countBlockChange + 16) % 17];
+    //}
+
+    public GameObject SetMemePrefab (long amount, Transform parent)
     {
         long min = listAmount[0];
+        GameObject obj = null;
         if (amount == min)
-            return sprites[countBlockChange % 17];
-        if (amount == min * Math.Pow(2, 1))
-            return sprites[(countBlockChange + 1) % 17];
-        if (amount == min * Math.Pow(2, 2))
-            return sprites[(countBlockChange + 2) % 17];
-        if (amount == min * Math.Pow(2, 3))
-            return sprites[(countBlockChange + 3) % 17];
-        if (amount == min * Math.Pow(2, 4))
-            return sprites[(countBlockChange + 4) % 17];
-        if (amount == min * Math.Pow(2, 5))
-            return sprites[(countBlockChange + 5) % 17];
-        if (amount == min * Math.Pow(2, 6))
-            return sprites[(countBlockChange + 6) % 17];
-        if (amount == min * Math.Pow(2, 7))
-            return sprites[(countBlockChange + 7) % 17];
-        if (amount == min * Math.Pow(2, 8))
-            return sprites[(countBlockChange + 8) % 17];
-        if (amount == min * Math.Pow(2, 9))
-            return sprites[(countBlockChange + 9) % 17];
-        if (amount == min * Math.Pow(2, 10))
-            return sprites[(countBlockChange + 10) % 17];
-        if (amount == min * Math.Pow(2, 11))
-            return sprites[(countBlockChange + 11) % 17];
-        if (amount == min * Math.Pow(2, 12))
-            return sprites[(countBlockChange + 12) % 17];
-        if (amount == min * Math.Pow(2, 13))
-            return sprites[(countBlockChange + 13) % 17];
-        if (amount == min * Math.Pow(2, 14))
-            return sprites[(countBlockChange + 14) % 17];
-        if (amount == min * Math.Pow(2, 15))
-            return sprites[(countBlockChange + 15) % 17];
-        if (amount == min * Math.Pow(2, 16))
-            return sprites[(countBlockChange + 16) % 17];
+            obj = sprites[countBlockChange % 17];
+        else if (amount == min * Math.Pow(2, 1))
+            obj = sprites[(countBlockChange + 1) % 17];
+        else if (amount == min * Math.Pow(2, 2))
+            obj = sprites[(countBlockChange + 2) % 17];
+        else if (amount == min * Math.Pow(2, 3))
+            obj = sprites[(countBlockChange + 3) % 17];
+        else if (amount == min * Math.Pow(2, 4))
+            obj = sprites[(countBlockChange + 4) % 17];
+        else if (amount == min * Math.Pow(2, 5))
+            obj = sprites[(countBlockChange + 5) % 17];
+        else if (amount == min * Math.Pow(2, 6))
+            obj = sprites[(countBlockChange + 6) % 17];
+        else if (amount == min * Math.Pow(2, 7))
+            obj = sprites[(countBlockChange + 7) % 17];
+        else if (amount == min * Math.Pow(2, 8))
+            obj = sprites[(countBlockChange + 8) % 17];
+        else if (amount == min * Math.Pow(2, 9))
+            obj = sprites[(countBlockChange + 9) % 17];
+        else if (amount == min * Math.Pow(2, 10))
+            obj = sprites[(countBlockChange + 10) % 17];
+        else if (amount == min * Math.Pow(2, 11))
+            obj = sprites[(countBlockChange + 11) % 17];
+        else if (amount == min * Math.Pow(2, 12))
+            obj = sprites[(countBlockChange + 12) % 17];
+        else if (amount == min * Math.Pow(2, 13))
+            obj = sprites[(countBlockChange + 13) % 17];
+        else if (amount == min * Math.Pow(2, 14))
+            obj = sprites[(countBlockChange + 14) % 17];
+        else if (amount == min * Math.Pow(2, 15))
+            obj = sprites[(countBlockChange + 15) % 17];
+        else if (amount == min * Math.Pow(2, 16))
+            obj = sprites[(countBlockChange + 16) % 17];
+        else 
+            obj = sprites[(countBlockChange + 16) % 17];
 
-        return sprites[(countBlockChange + 16) % 17];
-    }
+        objectPoolManager.SpawnGameObject(obj);
+        obj.transform.localPosition = Vector3.zero;
+        obj.transform.SetParent(parent);
+
+        return obj;
+    }    
 
     public Sprite GetAmountSpriteByChar(char v)
     {

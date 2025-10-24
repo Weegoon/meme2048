@@ -915,7 +915,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtAmount: {fileID: 1048996794}
-  image: {fileID: 16375637}
   imageDiamond: {fileID: 1622939919}
   imageTick: {fileID: 1056763457}
   imageKing: {fileID: 523409254}
@@ -932,6 +931,7 @@ MonoBehaviour:
   AmountContainer: {fileID: 1464899671}
   move_finish: {fileID: 1381969920}
   star_light: {fileID: 1526979328}
+  ObjItem: {fileID: 0}
 --- !u!1 &16948718
 GameObject:
   m_ObjectHideFlags: 0
@@ -2833,6 +2833,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2186b89cf0233dc49939d094eff0e875, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objectPoolManager: {fileID: 0}
   listItems:
   - {fileID: 1812719350}
   - {fileID: 1510407067}
@@ -3091,7 +3092,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtAmount: {fileID: 609860949}
-  image: {fileID: 122643259}
   trail: {fileID: 170627662}
   AmountImages:
   - {fileID: 1726108121}
@@ -3541,7 +3541,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtAmount: {fileID: 482974222}
-  image: {fileID: 99791275}
   imageDiamond: {fileID: 595534598}
   AmountImages:
   - {fileID: 553471884}
@@ -3972,7 +3971,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtAmount: {fileID: 740777197}
-  image: {fileID: 106172706}
   imageDiamond: {fileID: 781027821}
   imageTick: {fileID: 641542087}
   imageKing: {fileID: 955807063}
@@ -3989,6 +3987,7 @@ MonoBehaviour:
   AmountContainer: {fileID: 798936994}
   move_finish: {fileID: 641084385}
   star_light: {fileID: 981729999}
+  ObjItem: {fileID: 0}
 --- !u!1 &106518486
 GameObject:
   m_ObjectHideFlags: 0
@@ -5654,7 +5653,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtAmount: {fileID: 639319243}
-  image: {fileID: 154143898}
   imageDiamond: {fileID: 159606678}
   imageTick: {fileID: 1659032876}
   imageKing: {fileID: 1884034099}
@@ -5671,6 +5669,7 @@ MonoBehaviour:
   AmountContainer: {fileID: 1505176785}
   move_finish: {fileID: 1209853255}
   star_light: {fileID: 725217381}
+  ObjItem: {fileID: 0}
 --- !u!1 &154796282
 GameObject:
   m_ObjectHideFlags: 0
@@ -5817,7 +5816,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &157945438
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6551,7 +6550,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtAmount: {fileID: 1318213330}
-  image: {fileID: 171733247}
   imageDiamond: {fileID: 48355944}
   imageTick: {fileID: 294716684}
   imageKing: {fileID: 662509376}
@@ -6568,6 +6566,7 @@ MonoBehaviour:
   AmountContainer: {fileID: 1901186670}
   move_finish: {fileID: 866807789}
   star_light: {fileID: 293985899}
+  ObjItem: {fileID: 0}
 --- !u!1 &173399507
 GameObject:
   m_ObjectHideFlags: 0
@@ -6710,7 +6709,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtAmount: {fileID: 12399064}
-  image: {fileID: 173399510}
   imageDiamond: {fileID: 555413739}
   imageTick: {fileID: 921278359}
   imageKing: {fileID: 1432425109}
@@ -6727,6 +6725,7 @@ MonoBehaviour:
   AmountContainer: {fileID: 1530724009}
   move_finish: {fileID: 268261334}
   star_light: {fileID: 1406823831}
+  ObjItem: {fileID: 0}
 --- !u!1 &175498525
 GameObject:
   m_ObjectHideFlags: 0
@@ -8744,10 +8743,10 @@ RectTransform:
   m_Father: {fileID: 1773544288}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 66.5, y: -50}
-  m_SizeDelta: {x: 47, y: 64}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &224129658
 MonoBehaviour:
@@ -10933,7 +10932,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtAmount: {fileID: 1210592798}
-  image: {fileID: 335227253}
   imageDiamond: {fileID: 881036574}
   imageTick: {fileID: 371505130}
   imageKing: {fileID: 1673297540}
@@ -10950,6 +10948,7 @@ MonoBehaviour:
   AmountContainer: {fileID: 1935083558}
   move_finish: {fileID: 791181949}
   star_light: {fileID: 532612040}
+  ObjItem: {fileID: 0}
 --- !u!1 &337272876
 GameObject:
   m_ObjectHideFlags: 0
@@ -12016,7 +12015,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtAmount: {fileID: 1906168548}
-  image: {fileID: 349886067}
   imageDiamond: {fileID: 1702488765}
   imageTick: {fileID: 633722051}
   imageKing: {fileID: 217084415}
@@ -12033,6 +12031,7 @@ MonoBehaviour:
   AmountContainer: {fileID: 1742890500}
   move_finish: {fileID: 1079349440}
   star_light: {fileID: 720939073}
+  ObjItem: {fileID: 0}
 --- !u!1 &353021440
 GameObject:
   m_ObjectHideFlags: 0
@@ -12734,6 +12733,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 365912538}
   m_CullTransparentMesh: 1
+--- !u!1 &367030616
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 367030618}
+  - component: {fileID: 367030617}
+  m_Layer: 0
+  m_Name: PoolManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &367030617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367030616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 251d9c35736f33b44937fb54e4e29d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _initialCapacity: 32
+--- !u!4 &367030618
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367030616}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &367281943
 GameObject:
   m_ObjectHideFlags: 0
@@ -14442,7 +14486,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtAmount: {fileID: 373609054}
-  image: {fileID: 418636686}
   trail: {fileID: 727761617}
   AmountImages:
   - {fileID: 1064480155}
@@ -16906,7 +16949,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtAmount: {fileID: 276481193}
-  image: {fileID: 496749233}
   imageDiamond: {fileID: 271592554}
   imageTick: {fileID: 382027068}
   imageKing: {fileID: 1850074581}
@@ -16923,6 +16965,7 @@ MonoBehaviour:
   AmountContainer: {fileID: 1334801316}
   move_finish: {fileID: 680316340}
   star_light: {fileID: 380994786}
+  ObjItem: {fileID: 0}
 --- !u!1 &497865194
 GameObject:
   m_ObjectHideFlags: 0
@@ -17501,7 +17544,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtAmount: {fileID: 733366369}
-  image: {fileID: 520111739}
   trail: {fileID: 156607758}
   AmountImages:
   - {fileID: 1615843332}
@@ -21027,7 +21069,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtAmount: {fileID: 1692223092}
-  image: {fileID: 629049779}
   trail: {fileID: 1204414475}
   AmountImages:
   - {fileID: 763670976}
@@ -23279,7 +23320,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtAmount: {fileID: 36593162}
-  image: {fileID: 691223978}
   imageDiamond: {fileID: 2058742900}
   imageTick: {fileID: 798092017}
   imageKing: {fileID: 1037505998}
@@ -23296,6 +23336,7 @@ MonoBehaviour:
   AmountContainer: {fileID: 2051001398}
   move_finish: {fileID: 2010863051}
   star_light: {fileID: 701705223}
+  ObjItem: {fileID: 0}
 --- !u!1001 &701705221
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23716,7 +23757,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtAmount: {fileID: 511684547}
-  image: {fileID: 703656481}
   imageDiamond: {fileID: 1076582888}
   imageTick: {fileID: 1609848662}
   imageKing: {fileID: 382785734}
@@ -23733,6 +23773,7 @@ MonoBehaviour:
   AmountContainer: {fileID: 1655922429}
   move_finish: {fileID: 1931905155}
   star_light: {fileID: 1043719207}
+  ObjItem: {fileID: 0}
 --- !u!1 &710661882
 GameObject:
   m_ObjectHideFlags: 0
@@ -25660,7 +25701,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtAmount: {fileID: 466070941}
-  image: {fileID: 757448039}
   imageDiamond: {fileID: 662479176}
   imageTick: {fileID: 1704331692}
   imageKing: {fileID: 5270922}
@@ -25677,6 +25717,7 @@ MonoBehaviour:
   AmountContainer: {fileID: 469095884}
   move_finish: {fileID: 1437048503}
   star_light: {fileID: 558198558}
+  ObjItem: {fileID: 0}
 --- !u!1 &763670974
 GameObject:
   m_ObjectHideFlags: 0
@@ -26405,11 +26446,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtAmount: {fileID: 1823800279}
-  image: {fileID: 774390111}
   Key: 
   Amount: 0
   Row: 0
   Col: 0
+  ObjItem: {fileID: 0}
 --- !u!114 &774390110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27928,7 +27969,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtAmount: {fileID: 1284644798}
-  image: {fileID: 826364129}
   imageDiamond: {fileID: 1175014215}
   imageTick: {fileID: 1898598769}
   imageKing: {fileID: 735586196}
@@ -27945,6 +27985,7 @@ MonoBehaviour:
   AmountContainer: {fileID: 1840488257}
   move_finish: {fileID: 1431936211}
   star_light: {fileID: 1733140572}
+  ObjItem: {fileID: 0}
 --- !u!1 &829800315
 GameObject:
   m_ObjectHideFlags: 0
@@ -28038,7 +28079,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtAmount: {fileID: 812798182}
-  image: {fileID: 829800317}
   trail: {fileID: 1292749261}
   AmountImages:
   - {fileID: 19151411}
@@ -29195,10 +29235,10 @@ RectTransform:
   m_Father: {fileID: 1773544288}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 24, y: -50}
-  m_SizeDelta: {x: 48, y: 64}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &868731941
 MonoBehaviour:
@@ -29910,7 +29950,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtAmount: {fileID: 1924469528}
-  image: {fileID: 884532989}
   imageDiamond: {fileID: 2006666208}
   imageTick: {fileID: 1391561695}
   imageKing: {fileID: 2028462299}
@@ -29927,6 +29966,7 @@ MonoBehaviour:
   AmountContainer: {fileID: 593858552}
   move_finish: {fileID: 74067270}
   star_light: {fileID: 1413432365}
+  ObjItem: {fileID: 0}
 --- !u!1 &894687742
 GameObject:
   m_ObjectHideFlags: 0
@@ -30204,7 +30244,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtAmount: {fileID: 104035255}
-  image: {fileID: 901240628}
   imageDiamond: {fileID: 1971999259}
   imageTick: {fileID: 868287299}
   imageKing: {fileID: 929937285}
@@ -30221,6 +30260,7 @@ MonoBehaviour:
   AmountContainer: {fileID: 753726150}
   move_finish: {fileID: 1993847746}
   star_light: {fileID: 1087044397}
+  ObjItem: {fileID: 0}
 --- !u!1 &915613348
 GameObject:
   m_ObjectHideFlags: 0
@@ -31587,7 +31627,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtAmount: {fileID: 114608832}
-  image: {fileID: 944431083}
   imageDiamond: {fileID: 807848203}
   imageTick: {fileID: 353021442}
   imageKing: {fileID: 1819356623}
@@ -31604,6 +31643,7 @@ MonoBehaviour:
   AmountContainer: {fileID: 135258196}
   move_finish: {fileID: 18005091}
   star_light: {fileID: 1310721475}
+  ObjItem: {fileID: 0}
 --- !u!1 &948996866
 GameObject:
   m_ObjectHideFlags: 0
@@ -32470,7 +32510,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtAmount: {fileID: 201618964}
-  image: {fileID: 367281945}
   trail: {fileID: 1079191817}
   AmountImages:
   - {fileID: 860305554}
@@ -32620,7 +32659,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtAmount: {fileID: 1008189923}
-  image: {fileID: 979541968}
   imageDiamond: {fileID: 848354482}
   imageTick: {fileID: 1846882175}
   imageKing: {fileID: 370324606}
@@ -32637,6 +32675,7 @@ MonoBehaviour:
   AmountContainer: {fileID: 935073613}
   move_finish: {fileID: 1056690435}
   star_light: {fileID: 1514028162}
+  ObjItem: {fileID: 0}
 --- !u!1001 &981729997
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33200,7 +33239,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1005610577
 RectTransform:
   m_ObjectHideFlags: 0
@@ -36876,7 +36915,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtAmount: {fileID: 3363133}
-  image: {fileID: 1097483221}
   imageDiamond: {fileID: 606799957}
   imageTick: {fileID: 1517445374}
   imageKing: {fileID: 1300351865}
@@ -36893,6 +36931,7 @@ MonoBehaviour:
   AmountContainer: {fileID: 1064932734}
   move_finish: {fileID: 1481512270}
   star_light: {fileID: 622320247}
+  ObjItem: {fileID: 0}
 --- !u!1 &1097677412
 GameObject:
   m_ObjectHideFlags: 0
@@ -37533,7 +37572,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtAmount: {fileID: 484908589}
-  image: {fileID: 1127821716}
   imageDiamond: {fileID: 1909435427}
   imageTick: {fileID: 1978370121}
   imageKing: {fileID: 1087274639}
@@ -37550,6 +37588,7 @@ MonoBehaviour:
   AmountContainer: {fileID: 1070032496}
   move_finish: {fileID: 1554394877}
   star_light: {fileID: 566144468}
+  ObjItem: {fileID: 0}
 --- !u!1 &1128219781
 GameObject:
   m_ObjectHideFlags: 0
@@ -38635,7 +38674,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtAmount: {fileID: 337272878}
-  image: {fileID: 1174482841}
   imageDiamond: {fileID: 1013599628}
   imageTick: {fileID: 1641548848}
   imageKing: {fileID: 2141840042}
@@ -38652,6 +38690,7 @@ MonoBehaviour:
   AmountContainer: {fileID: 1692504052}
   move_finish: {fileID: 1744733311}
   star_light: {fileID: 1593789536}
+  ObjItem: {fileID: 0}
 --- !u!1 &1175014213
 GameObject:
   m_ObjectHideFlags: 0
@@ -47376,7 +47415,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtAmount: {fileID: 1890937858}
-  image: {fileID: 1487801059}
   imageDiamond: {fileID: 1930708254}
   imageTick: {fileID: 1986903232}
   imageKing: {fileID: 56051660}
@@ -47393,6 +47431,7 @@ MonoBehaviour:
   AmountContainer: {fileID: 1230254632}
   move_finish: {fileID: 1356161462}
   star_light: {fileID: 115552270}
+  ObjItem: {fileID: 0}
 --- !u!1 &1489386092
 GameObject:
   m_ObjectHideFlags: 0
@@ -48057,7 +48096,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtAmount: {fileID: 317090131}
-  image: {fileID: 1510407065}
   imageDiamond: {fileID: 477033006}
   imageTick: {fileID: 286296226}
   imageKing: {fileID: 396095824}
@@ -48074,6 +48112,7 @@ MonoBehaviour:
   AmountContainer: {fileID: 877487368}
   move_finish: {fileID: 825843908}
   star_light: {fileID: 1366577244}
+  ObjItem: {fileID: 0}
 --- !u!1 &1512117415
 GameObject:
   m_ObjectHideFlags: 0
@@ -48570,7 +48609,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtAmount: {fileID: 1878538072}
-  image: {fileID: 1526292994}
   imageDiamond: {fileID: 1769921624}
   imageTick: {fileID: 313797490}
   imageKing: {fileID: 530580371}
@@ -48587,6 +48625,7 @@ MonoBehaviour:
   AmountContainer: {fileID: 1977063190}
   move_finish: {fileID: 259428458}
   star_light: {fileID: 1774312556}
+  ObjItem: {fileID: 0}
 --- !u!1001 &1526979326
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48958,7 +48997,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtAmount: {fileID: 1683543109}
-  image: {fileID: 1537908729}
   imageDiamond: {fileID: 391353865}
   imageTick: {fileID: 948996868}
   imageKing: {fileID: 1314080479}
@@ -48975,6 +49013,7 @@ MonoBehaviour:
   AmountContainer: {fileID: 65887127}
   move_finish: {fileID: 1557571267}
   star_light: {fileID: 370714493}
+  ObjItem: {fileID: 0}
 --- !u!1 &1537918081
 GameObject:
   m_ObjectHideFlags: 0
@@ -49893,7 +49932,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtAmount: {fileID: 1396941820}
-  image: {fileID: 1557593588}
   imageDiamond: {fileID: 1075074729}
   imageTick: {fileID: 65633395}
   imageKing: {fileID: 1033911510}
@@ -49910,6 +49948,7 @@ MonoBehaviour:
   AmountContainer: {fileID: 197028921}
   move_finish: {fileID: 1260617754}
   star_light: {fileID: 2014635585}
+  ObjItem: {fileID: 0}
 --- !u!1001 &1558466521
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50990,7 +51029,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtAmount: {fileID: 1032654610}
-  image: {fileID: 1585148860}
   imageDiamond: {fileID: 2072690536}
   imageTick: {fileID: 150407512}
   imageKing: {fileID: 1869213363}
@@ -51007,6 +51045,7 @@ MonoBehaviour:
   AmountContainer: {fileID: 1773057513}
   move_finish: {fileID: 63230741}
   star_light: {fileID: 1834577409}
+  ObjItem: {fileID: 0}
 --- !u!1 &1587015391
 GameObject:
   m_ObjectHideFlags: 0
@@ -53073,7 +53112,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtAmount: {fileID: 624391475}
-  image: {fileID: 1631212865}
   imageDiamond: {fileID: 1671379631}
   imageTick: {fileID: 2093265442}
   imageKing: {fileID: 1131296209}
@@ -53090,6 +53128,7 @@ MonoBehaviour:
   AmountContainer: {fileID: 1615904586}
   move_finish: {fileID: 1558466523}
   star_light: {fileID: 880107327}
+  ObjItem: {fileID: 0}
 --- !u!1 &1641548846
 GameObject:
   m_ObjectHideFlags: 0
@@ -54038,7 +54077,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtAmount: {fileID: 1653997408}
-  image: {fileID: 1658914195}
   imageDiamond: {fileID: 1097677414}
   imageTick: {fileID: 1007879847}
   imageKing: {fileID: 1144897167}
@@ -54055,6 +54093,7 @@ MonoBehaviour:
   AmountContainer: {fileID: 1548236602}
   move_finish: {fileID: 586911960}
   star_light: {fileID: 1456136903}
+  ObjItem: {fileID: 0}
 --- !u!1 &1659032874
 GameObject:
   m_ObjectHideFlags: 0
@@ -55087,7 +55126,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtAmount: {fileID: 1515845578}
-  image: {fileID: 1687761154}
   imageDiamond: {fileID: 1154687133}
   imageTick: {fileID: 1673402853}
   imageKing: {fileID: 67585709}
@@ -55104,6 +55142,7 @@ MonoBehaviour:
   AmountContainer: {fileID: 1046243780}
   move_finish: {fileID: 483650703}
   star_light: {fileID: 1896491268}
+  ObjItem: {fileID: 0}
 --- !u!1 &1688113490
 GameObject:
   m_ObjectHideFlags: 0
@@ -57416,7 +57455,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtAmount: {fileID: 1118598484}
-  image: {fileID: 1747608069}
   imageDiamond: {fileID: 1995013704}
   imageTick: {fileID: 1993937585}
   imageKing: {fileID: 399541926}
@@ -57433,6 +57471,7 @@ MonoBehaviour:
   AmountContainer: {fileID: 1153082656}
   move_finish: {fileID: 1193802641}
   star_light: {fileID: 1805808433}
+  ObjItem: {fileID: 0}
 --- !u!1 &1768019733
 GameObject:
   m_ObjectHideFlags: 0
@@ -57723,7 +57762,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -1.7}
-  m_SizeDelta: {x: 90, y: 100}
+  m_SizeDelta: {x: 0, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1773544289
 MonoBehaviour:
@@ -58610,7 +58649,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1812719346
 RectTransform:
   m_ObjectHideFlags: 0
@@ -58630,6 +58669,7 @@ RectTransform:
   - {fileID: 1671657134}
   - {fileID: 1700880960}
   - {fileID: 1773544288}
+  - {fileID: 1991440675}
   m_Father: {fileID: 74732676}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -58733,7 +58773,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtAmount: {fileID: 222872142}
-  image: {fileID: 1812719348}
   imageDiamond: {fileID: 1177672705}
   imageTick: {fileID: 1074614606}
   imageKing: {fileID: 1349687596}
@@ -58750,6 +58789,7 @@ MonoBehaviour:
   AmountContainer: {fileID: 1773544287}
   move_finish: {fileID: 1671657135}
   star_light: {fileID: 1700880959}
+  ObjItem: {fileID: 0}
 --- !u!1 &1815627470
 GameObject:
   m_ObjectHideFlags: 0
@@ -60708,7 +60748,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtAmount: {fileID: 792652243}
-  image: {fileID: 1877522392}
   imageDiamond: {fileID: 1035274368}
   imageTick: {fileID: 2008081270}
   imageKing: {fileID: 1601221805}
@@ -60725,6 +60764,7 @@ MonoBehaviour:
   AmountContainer: {fileID: 596075696}
   move_finish: {fileID: 33628056}
   star_light: {fileID: 1309164524}
+  ObjItem: {fileID: 0}
 --- !u!1 &1878538070
 GameObject:
   m_ObjectHideFlags: 0
@@ -64323,7 +64363,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtAmount: {fileID: 341842617}
-  image: {fileID: 1990957529}
   imageDiamond: {fileID: 1192164257}
   imageTick: {fileID: 1795017535}
   imageKing: {fileID: 2119585885}
@@ -64340,6 +64379,12 @@ MonoBehaviour:
   AmountContainer: {fileID: 1913022807}
   move_finish: {fileID: 188151760}
   star_light: {fileID: 793313743}
+  ObjItem: {fileID: 0}
+--- !u!224 &1991440675 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 5239334661640923133, guid: 1fc6db9f40a804242b97cd851a64c82d, type: 3}
+  m_PrefabInstance: {fileID: 5239334662887530206}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1993847744
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -64614,7 +64659,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtAmount: {fileID: 255689266}
-  image: {fileID: 1995275689}
   trail: {fileID: 1011323218}
   AmountImages:
   - {fileID: 712684901}
@@ -65680,7 +65724,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtAmount: {fileID: 37498493}
-  image: {fileID: 2038687574}
   imageDiamond: {fileID: 1721591587}
   imageTick: {fileID: 2145448546}
   imageKing: {fileID: 689798019}
@@ -65697,6 +65740,7 @@ MonoBehaviour:
   AmountContainer: {fileID: 480408562}
   move_finish: {fileID: 1360744617}
   star_light: {fileID: 1913188877}
+  ObjItem: {fileID: 0}
 --- !u!1 &2039285101
 GameObject:
   m_ObjectHideFlags: 0
@@ -65790,7 +65834,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtAmount: {fileID: 1031554616}
-  image: {fileID: 2039285103}
   trail: {fileID: 690645094}
   AmountImages:
   - {fileID: 1176053426}
@@ -65853,7 +65896,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtAmount: {fileID: 1144497743}
-  image: {fileID: 2039399586}
   trail: {fileID: 1560074212}
   AmountImages:
   - {fileID: 1140635234}
@@ -66123,7 +66165,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtAmount: {fileID: 640937401}
-  image: {fileID: 2057130471}
   imageDiamond: {fileID: 1015196567}
   imageTick: {fileID: 2074186330}
   imageKing: {fileID: 1621166597}
@@ -66140,6 +66181,7 @@ MonoBehaviour:
   AmountContainer: {fileID: 1949641059}
   move_finish: {fileID: 590710364}
   star_light: {fileID: 797744751}
+  ObjItem: {fileID: 0}
 --- !u!1 &2058742898
 GameObject:
   m_ObjectHideFlags: 0
@@ -67017,7 +67059,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtAmount: {fileID: 146193880}
-  image: {fileID: 2087744922}
   imageDiamond: {fileID: 1068299999}
   imageTick: {fileID: 1806626981}
   imageKing: {fileID: 1421968348}
@@ -67034,6 +67075,7 @@ MonoBehaviour:
   AmountContainer: {fileID: 951197828}
   move_finish: {fileID: 1630084189}
   star_light: {fileID: 1447317149}
+  ObjItem: {fileID: 0}
 --- !u!1 &2088124170
 GameObject:
   m_ObjectHideFlags: 0
@@ -104409,6 +104451,103 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5025074597381008022}
   m_CullTransparentMesh: 1
+--- !u!1001 &5239334662887530206
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1812719346}
+    m_Modifications:
+    - target: {fileID: 5239334661640923132, guid: 1fc6db9f40a804242b97cd851a64c82d, type: 3}
+      propertyPath: m_Name
+      value: block_8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5239334661640923133, guid: 1fc6db9f40a804242b97cd851a64c82d, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5239334661640923133, guid: 1fc6db9f40a804242b97cd851a64c82d, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5239334661640923133, guid: 1fc6db9f40a804242b97cd851a64c82d, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5239334661640923133, guid: 1fc6db9f40a804242b97cd851a64c82d, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5239334661640923133, guid: 1fc6db9f40a804242b97cd851a64c82d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5239334661640923133, guid: 1fc6db9f40a804242b97cd851a64c82d, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5239334661640923133, guid: 1fc6db9f40a804242b97cd851a64c82d, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5239334661640923133, guid: 1fc6db9f40a804242b97cd851a64c82d, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -9.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5239334661640923133, guid: 1fc6db9f40a804242b97cd851a64c82d, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -9.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5239334661640923133, guid: 1fc6db9f40a804242b97cd851a64c82d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5239334661640923133, guid: 1fc6db9f40a804242b97cd851a64c82d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5239334661640923133, guid: 1fc6db9f40a804242b97cd851a64c82d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5239334661640923133, guid: 1fc6db9f40a804242b97cd851a64c82d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5239334661640923133, guid: 1fc6db9f40a804242b97cd851a64c82d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5239334661640923133, guid: 1fc6db9f40a804242b97cd851a64c82d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5239334661640923133, guid: 1fc6db9f40a804242b97cd851a64c82d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5239334661640923133, guid: 1fc6db9f40a804242b97cd851a64c82d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.000030517578
+      objectReference: {fileID: 0}
+    - target: {fileID: 5239334661640923133, guid: 1fc6db9f40a804242b97cd851a64c82d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5239334661640923133, guid: 1fc6db9f40a804242b97cd851a64c82d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5239334661640923133, guid: 1fc6db9f40a804242b97cd851a64c82d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5239334661640923133, guid: 1fc6db9f40a804242b97cd851a64c82d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1fc6db9f40a804242b97cd851a64c82d, type: 3}
 --- !u!4 &5384066018248366880
 Transform:
   m_ObjectHideFlags: 0

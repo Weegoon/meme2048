@@ -8,8 +8,8 @@ public class ItemTemplate : MonoBehaviour
 {
     [SerializeField]
     TMP_Text txtAmount;
-    [SerializeField]
-    Image image;
+    //[SerializeField]
+    //Image image;
     [HideInInspector]
     public string Key;
     [HideInInspector]
@@ -17,6 +17,9 @@ public class ItemTemplate : MonoBehaviour
     [HideInInspector]
     public int Row, Col;
     private MapType mapType;
+
+    public GameObject ObjItem;
+
     public void Init(MapType mapType, string key)
     {
         this.Key = key;
@@ -39,7 +42,12 @@ public class ItemTemplate : MonoBehaviour
         }
         else
         {
-            this.image.sprite = Map.Instance.GetSprite(amount);
+            if (ObjItem != null)
+            {
+                Map.Instance.objectPoolManager.DespawnGameObject(ObjItem);
+                ObjItem = null;
+            }
+            ObjItem = Map.Instance.SetMemePrefab(amount, transform);
             this.gameObject.SetActive(true);
         }
     }
