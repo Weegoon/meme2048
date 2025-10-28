@@ -1521,11 +1521,12 @@ public class Map : MonoBehaviour
         else 
             obj = sprites[(countBlockChange + 16) % 17];
 
-        objectPoolManager.SpawnGameObject(obj);
-        obj.transform.localPosition = Vector3.zero;
-        obj.transform.SetParent(parent);
-
-        return obj;
+        GameObject objSpawn = objectPoolManager.SpawnGameObject(obj);
+        objSpawn.transform.SetParent(parent);
+        objSpawn.transform.localPosition = Vector3.zero;
+        objSpawn.transform.localScale = Vector3.one;
+        objSpawn.transform.SetAsFirstSibling();
+        return objSpawn;
     }    
 
     public Sprite GetAmountSpriteByChar(char v)

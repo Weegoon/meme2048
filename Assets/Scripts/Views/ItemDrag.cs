@@ -23,12 +23,17 @@ public class ItemDrag : MonoBehaviour
     public bool IsDiamond;
     private MapType mapType;
     private Action PointerDown, PointerDrag, PointerUp;
+
+    public GameObject ObjItem;
+
     public void InitDrag(Action PointerDown, Action PointerDrag, Action PointerUp)
     {
         this.PointerDown = PointerDown;
         this.PointerDrag = PointerDrag;
         this.PointerUp = PointerUp;
         Diamond(false);
+
+        AmountContainer.SetActive(false);
     }
     public void SetData(long amount)
     {
@@ -59,7 +64,12 @@ public class ItemDrag : MonoBehaviour
         }
         else
         {
-            //this.image.sprite = Map.Instance.GetSprite(amount);
+            if (ObjItem != null)
+            {
+                Map.Instance.objectPoolManager.DespawnGameObject(ObjItem);
+                ObjItem = null;
+            }
+            ObjItem = Map.Instance.SetMemePrefab(amount, this.transform);
             this.gameObject.SetActive(true);
         }
     }

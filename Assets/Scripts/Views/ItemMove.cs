@@ -10,13 +10,16 @@ public class ItemMove : MonoBehaviour
 {
     [SerializeField]
     TMP_Text txtAmount;
-    [SerializeField]
-    Image /*image,*/ trail;
+    //[SerializeField]
+    //Image trail;
     [SerializeField]
     Image[] AmountImages;
     [SerializeField]
     GameObject AmountContainer;
     private MapType mapType;
+
+    public GameObject ObjItem;
+
     public void MoveTaget(Vector3 taget, float time, Action callback = null)
     {
         transform.DOMove(taget, time).SetEase(Ease.OutCubic).OnComplete(() =>
@@ -28,7 +31,7 @@ public class ItemMove : MonoBehaviour
     }
     public void SetData(long amount, bool activeTrail = false)
     {
-        trail.gameObject.SetActive(activeTrail);
+        //trail.gameObject.SetActive(activeTrail);
         string strAmount = Utils.FormatNumber1(amount);
         SetText(strAmount);
         //if (strAmount.Length <= 2)
@@ -41,6 +44,8 @@ public class ItemMove : MonoBehaviour
         //    txtAmount.fontSize = 70;
         //txtAmount.text = strAmount;
         ChangeAmount(amount);
+
+        AmountContainer.SetActive(false);
     }
     private void ChangeAmount(long amount)
     {
@@ -50,8 +55,14 @@ public class ItemMove : MonoBehaviour
         }
         else
         {
-            //this.image.sprite = Map.Instance.GetSprite(amount);
-            this.trail.color = Map.Instance.GetColor(amount);
+            if (ObjItem != null)
+            {
+                Map.Instance.objectPoolManager.DespawnGameObject(ObjItem);
+                ObjItem = null;
+            }
+            ObjItem = Map.Instance.SetMemePrefab(amount, transform);
+
+            //this.trail.color = Map.Instance.GetColor(amount);
             this.gameObject.SetActive(true);
         }
     }

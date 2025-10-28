@@ -28,6 +28,7 @@ public class ItemPlay : MonoBehaviour, IPointerClickHandler
     Action<string> callback;
     [SerializeField]
     ParticleSystem move_finish,star_light;
+
     public void Init(MapType mapType, string key, int amount, Action<string> callback)
     {
         this.Amount = amount;
@@ -39,6 +40,8 @@ public class ItemPlay : MonoBehaviour, IPointerClickHandler
         //OffAllParticle();
         Diamond(false);
         SetData(this.Amount);
+
+        AmountContainer.SetActive(false);
     }
     public Vector3 GetImpactPostion()
     {
@@ -104,7 +107,7 @@ public class ItemPlay : MonoBehaviour, IPointerClickHandler
                 Map.Instance.objectPoolManager.DespawnGameObject(ObjItem);
                 ObjItem = null;
             }
-            ObjItem = Map.Instance.SetMemePrefab(amount, transform);
+            ObjItem = Map.Instance.SetMemePrefab(amount, this.transform);
             this.gameObject.SetActive(true);
         }
         if (amount>= MaxBlock)
